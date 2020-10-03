@@ -1,5 +1,23 @@
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
 
 /* You can add global styles to this file, and also import other style files */
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+// .svg-icon {
+//   width: 1em;
+//   height: 1em;
+// }
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: currentColor;
+}
+
+.svg-icon circle {
+  stroke: currentColor;
+  stroke-width: 1;
+}

@@ -11,9 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CanbanBoardComponent } from './components/canban-board/canban-board.component';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

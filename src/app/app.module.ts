@@ -12,9 +12,10 @@ import { CanbanBoardComponent } from './components/canban-board/canban-board.com
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -4,6 +4,7 @@
       <h4>{{ item.title }}</h4>
       <svg
         [ngClass]="{ '-rotate-180 transform': item.isExpanded }"
+        class="transition duration-500 ease-in-out text-blue-600"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
@@ -14,10 +15,10 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <path d="M18 15l-6-6-6 6" />
+        <path d="M6 9l6 6 6-6" />
       </svg>
     </div>
-    <div class="p-2" [class.hidden]="!item.isExpanded">
+    <div class="p-2 border-t" [class.hidden]="!item.isExpanded">
       <p>{{ item.content }}</p>
     </div>
   </div>

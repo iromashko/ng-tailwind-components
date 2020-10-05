@@ -1,6 +1,7 @@
-<div class="shadow-md">
+<div data-cy="accordion-component" class="shadow-md">
   <div *ngFor="let item of items" class="border-b">
     <div
+      data-cy="accordion-title"
       class="flex items-center justify-between p-2 bg-gray-100"
       (click)="toggle(item)"
     >
@@ -21,7 +22,11 @@
         <path d="M6 9l6 6 6-6" />
       </svg>
     </div>
-    <div class="p-2 border-t" [class.hidden]="!item.isExpanded">
+    <div
+      data-cy="accordion-content"
+      class="p-2 border-t"
+      [class.hidden]="!item.isExpanded"
+    >
       <p>{{ item.content }}</p>
     </div>
   </div>

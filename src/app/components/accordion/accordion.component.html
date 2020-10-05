@@ -1,6 +1,9 @@
 <div class="shadow-md">
   <div *ngFor="let item of items" class="border-b">
-    <div class="flex items-center justify-between p-2" (click)="toggle(item)">
+    <div
+      class="flex items-center justify-between p-2 bg-gray-100"
+      (click)="toggle(item)"
+    >
       <h4>{{ item.title }}</h4>
       <svg
         [ngClass]="{ '-rotate-180 transform': item.isExpanded }"

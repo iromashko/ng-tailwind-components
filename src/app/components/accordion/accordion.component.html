@@ -2,7 +2,7 @@
   <div *ngFor="let item of items" class="border-b">
     <div
       data-cy="accordion-title"
-      class="flex items-center justify-between p-2 bg-gray-100"
+      class="flex items-center justify-between p-2 bg-gray-100 select-none"
       (click)="toggle(item)"
     >
       <h4>{{ item.title }}</h4>
@@ -24,7 +24,7 @@
     </div>
     <div
       data-cy="accordion-content"
-      class="p-2 border-t"
+      class="p-3 border-t"
       [class.hidden]="!item.isExpanded"
     >
       <p>{{ item.content }}</p>

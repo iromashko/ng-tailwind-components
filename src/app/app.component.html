@@ -1,18 +1,18 @@
 <app-toolbar [title]="'Angular Tailwind Components'">
-  <ul class="flex">
+  <ul class="flex justify-between mt-1">
     <li
-      class="px-2"
+      class=""
       routerLink=""
       routerLinkActive=""
       [routerLinkActiveOptions]="{ exact: true }"
     >
       Components
     </li>
-    <li class="px-2" routerLink="directives" routerLinkActive="">Directives</li>
-    <li class="px-2" routerLink="pricing" routerLinkActive="">Pricing</li>
-    <li class="px-2" routerLink="services" routerLinkActive="">Services</li>
-    <li class="px-2" routerLink="pipes" routerLinkActive="">Pipes</li>
-    <li class="px-2" routerLink="other" routerLinkActive="">Other</li>
+    <li routerLink="directives" routerLinkActive="">Directives</li>
+    <li routerLink="pricing" routerLinkActive="">Pricing</li>
+    <li routerLink="services" routerLinkActive="">Services</li>
+    <li routerLink="pipes" routerLinkActive="">Pipes</li>
+    <li routerLink="other" routerLinkActive="">Other</li>
   </ul>
 </app-toolbar>
 

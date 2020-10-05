@@ -22,6 +22,8 @@ export class ComponentDocumentationComponent implements OnInit {
     },
   ];
 
+  public progressValue = 25;
+
   constructor() {}
 
   ngOnInit(): void {}

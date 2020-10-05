@@ -1,3 +1,24 @@
+<app-card [title]="'Progress Bar'" [subTitle]="'Components'">
+  <app-progress-bar body [value]="progressValue"></app-progress-bar>
+
+  <div footer>
+    <button
+      footer
+      class="bg-transparent outline-none font-smaller hover:bg-gray-200 text-gray-700 py-1 px-4 border border border-gray-500 hover:border-transparent rounded-l-sm"
+      (click)="progressValue = 100"
+    >
+      Update
+    </button>
+    <button
+      footer
+      class="bg-transparent outline-none font-smaller hover:bg-gray-200 text-gray-700 py-1 px-4 border border-l-0 border-gray-500 hover:border-transparent rounded-r-sm"
+      (click)="progressValue = 0"
+    >
+      Reset
+    </button>
+  </div>
+</app-card>
+
 <app-card [title]="'Accordion'" [subTitle]="'Components'">
   <app-accordion body [items]="accordionItems"></app-accordion>
 </app-card>

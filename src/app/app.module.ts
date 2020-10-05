@@ -13,9 +13,10 @@ import { ContactSectionComponent } from './components/contact-section/contact-se
 import { BlogComponent } from './components/blog/blog.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { PricingGridComponent } from './components/pricing-grid/pricing-grid.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

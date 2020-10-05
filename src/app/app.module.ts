@@ -14,9 +14,10 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { PricingGridComponent } from './components/pricing-grid/pricing-grid.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent, CardComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

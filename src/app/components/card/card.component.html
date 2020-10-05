@@ -1,0 +1,31 @@
+<div class="grid gap-1 shadow-md mt-3 rounded">
+  <div class="header flex items-center bg-green-400 text-white p-2 rounded-t">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" y1="16" x2="12" y2="12"></line>
+      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+    </svg>
+    <div class="title flex items-center ml-2">
+      <h5>{{ title }}</h5>
+      <h6 class="ml-2">{{ subTitle }}</h6>
+    </div>
+  </div>
+
+  <div class="body p-3">
+    <ng-content select="[body]"></ng-content>
+  </div>
+
+  <div class="footer p-3">
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</div>

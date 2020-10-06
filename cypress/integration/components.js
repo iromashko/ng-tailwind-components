@@ -32,3 +32,24 @@ describe("Progress Bar Component", () => {
     cy.get('[data-cy="progress-value"]').contains("100");
   });
 });
+
+describe("Star Ratings Component", () => {
+  before(() => {
+    cy.visit("");
+  });
+  it("Show Star ratings", () => {
+    cy.get('[data-cy="star-ratings"]').should("be.visible");
+  });
+  it("Star ratings empty", () => {
+    cy.get('[data-cy="star-ratings-empty"]').click();
+    cy.get('[data-cy="star-ratings-empty"]').should("be.visible");
+  });
+  it("Star ratings half star", () => {
+    cy.get('[data-cy="star-ratings-half"]').click();
+    cy.get('[data-cy="star-ratings-half"]').should("be.visible");
+  });
+  it("Star ratings full", () => {
+    cy.get('[data-cy="star-ratings-full"]').click();
+    cy.get('[data-cy="star-ratings-full"]').should("be.visible");
+  });
+});

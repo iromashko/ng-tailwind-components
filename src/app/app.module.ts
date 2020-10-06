@@ -17,9 +17,10 @@ import { PricingGridComponent } from './components/pricing-grid/pricing-grid.com
 import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent, CardComponent, AccordionComponent, ProgressBarComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent, CardComponent, AccordionComponent, ProgressBarComponent, StarRatingsComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

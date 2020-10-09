@@ -1,0 +1,29 @@
+<div class="relative">
+  <button (mouseenter)="isOpen = true" class="bg-green-400 text-white p-2">
+    Dropdown
+  </button>
+  <div
+    *ngIf="isOpen"
+    (mouseleave)="isOpen = false"
+    class="absolute shadow bg-white"
+  >
+    <a
+      (mouseover)="isOpen = true"
+      class="block px-6 py-4 no-underline hover:bg-gray-300"
+      href="#"
+      >Link 1</a
+    >
+    <a
+      (mouseover)="isOpen = true"
+      class="block px-6 py-4 no-underline hover:bg-gray-300"
+      href="#"
+      >Link 2</a
+    >
+    <a
+      (mouseover)="isOpen = true"
+      class="block px-6 py-4 no-underline hover:bg-gray-300"
+      href="#"
+      >Link 3</a
+    >
+  </div>
+</div>

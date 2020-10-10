@@ -1,8 +1,8 @@
 <div>
   <div class="bg-white">
     <header>
-      <nav class="max-w-5xl mx-auto pt-5">
-        <div>
+      <nav class="max-w-5xl mx-auto pt-5 flex item-center justify-between">
+        <div class="flex items-center space-x-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-7 w-7"
@@ -10,29 +10,35 @@
           >
             <path d="M24 22h-24l12-20z" />
           </svg>
-          /
-          <span>
-            <span>
-              <img
-                class="h-7 w-7 rounded-full border border-gray-200"
-                src="http://robohash.org/vercel"
-              />
-            </span>
-            <span>I, robot!</span>
-            <span>
+          <span
+            class="inline-flex items-center space-x-2 text-sm leading-5 font-medium"
+          >
+            <a href="vercel" class="inline-flex items-center space-x-2">
+              <app-avatar></app-avatar>
+              <span>I, robot!</span>
+            </a>
+            <button
+              type="button "
+              class="inline-flex items-center border-transparent border hover:border-gray-200 hover:bg-gray-50 transition ease-in-out duration-150 rounded-sm"
+            >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                class="w-6 h-6 text-gray-500"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M14 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm-3-3.858c.321-.083.653-.142 1-.142s.679.059 1 .142v-2.142h4l-5-6-5 6h4v2.142zm2 7.716c-.321.083-.653.142-1 .142s-.679-.059-1-.142v2.142h-4l5 6 5-6h-4v-2.142z"
-                />
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+                ></path>
               </svg>
-            </span>
+            </button>
           </span>
         </div>
+
         <div>
           <button type="button">Feedback</button>
           <a href="#">Blog</a>
@@ -51,7 +57,7 @@
             </svg>
           </button>
           <button type="button">
-            <img src="http://robohash.org/vercel" />
+            <app-avatar></app-avatar>
           </button>
         </div>
       </nav>

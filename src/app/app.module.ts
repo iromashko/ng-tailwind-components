@@ -21,9 +21,10 @@ import { StarRatingsComponent } from './components/star-ratings/star-ratings.com
 import { DropdownHoverComponent } from './components/dropdown-hover/dropdown-hover.component';
 import { VercelComponent } from './pages/vercel/vercel.component';
 import { AvatarComponent } from './pages/vercel/avatar/avatar.component';
+import { RepoComponent } from './pages/vercel/repo/repo.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent, CardComponent, AccordionComponent, ProgressBarComponent, StarRatingsComponent, DropdownHoverComponent, VercelComponent, AvatarComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent, CardComponent, AccordionComponent, ProgressBarComponent, StarRatingsComponent, DropdownHoverComponent, VercelComponent, AvatarComponent, RepoComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

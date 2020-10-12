@@ -24,9 +24,10 @@ import { AvatarComponent } from './pages/vercel/avatar/avatar.component';
 import { RepoComponent } from './pages/vercel/repo/repo.component';
 import { ActivityItemComponent } from './pages/vercel/activity-item/activity-item.component';
 import { AccountSwitcherComponent } from './pages/vercel/account-switcher/account-switcher.component';
+import { InboxComponent } from './pages/inbox/inbox.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent, CardComponent, AccordionComponent, ProgressBarComponent, StarRatingsComponent, DropdownHoverComponent, VercelComponent, AvatarComponent, RepoComponent, ActivityItemComponent, AccountSwitcherComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FeatureComponent, FooterComponent, CanbanBoardComponent, ContactSectionComponent, BlogComponent, ComponentDocumentationComponent, ToolbarComponent, PricingGridComponent, CardComponent, AccordionComponent, ProgressBarComponent, StarRatingsComponent, DropdownHoverComponent, VercelComponent, AvatarComponent, RepoComponent, ActivityItemComponent, AccountSwitcherComponent, InboxComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

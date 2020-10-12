@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
-import { PricingGridComponent } from './components/pricing-grid/pricing-grid.component';
+import { InboxComponent } from './pages/inbox/inbox.component';
 import { VercelComponent } from './pages/vercel/vercel.component';
 
 const routes: Routes = [
@@ -10,8 +10,8 @@ const routes: Routes = [
     component: ComponentDocumentationComponent,
   },
   {
-    path: 'pricing',
-    component: PricingGridComponent,
+    path: 'inbox',
+    component: InboxComponent,
   },
   {
     path: 'vercel',

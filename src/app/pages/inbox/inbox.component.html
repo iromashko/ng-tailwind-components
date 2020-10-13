@@ -1,14 +1,14 @@
 <div>
   <header class="flex">
-    <div class="flex-shrink-0 px-4 py-3 bg-gray-800">
-      <button class="flex items-center">
+    <div class="flex-shrink-0 w-64 px-4 py-3 bg-gray-800">
+      <button class="flex items-center w-full">
         <img
           class="object-cover w-8 h-8 border-2 border-gray-400 rounded-full"
           src="http://robohash.org/inbox"
         />
-        <span class="ml-4 text-sm font-medium text-white">T1000</span>
+        <span class="ml-4 mr-2 text-sm font-medium text-white">T1000</span>
         <svg
-          class="w-4 h-4 ml-10 text-gray-400 stroke-current"
+          class="w-4 h-4 ml-auto text-gray-400 stroke-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -19,9 +19,71 @@
         </svg>
       </button>
     </div>
-    <div class="flex-1 bg-gray-700">
-      <div></div>
-      <div></div>
+    <div class="flex items-center justify-between flex-1 px-6 bg-gray-700">
+      <nav class="flex">
+        <a
+          href="#"
+          class="inline-block px-3 py-2 text-sm font-medium leading-none text-white bg-gray-800 rounded-lg"
+          >Mailbox</a
+        >
+        <a
+          href="#"
+          class="inline-block px-3 py-2 ml-2 text-sm font-medium leading-none text-white rounded-lg hover:bg-gray-600"
+          >Customers</a
+        >
+        <a
+          href="#"
+          class="inline-block px-3 py-2 ml-2 text-sm font-medium leading-none text-white rounded-lg hover:bg-gray-600"
+          >Reporting</a
+        >
+        <a
+          href="#"
+          class="inline-block px-3 py-2 ml-2 text-sm font-medium leading-none text-white rounded-lg hover:bg-gray-600"
+          >Manage</a
+        >
+      </nav>
+      <div class="flex items-center">
+        <div class="relative w-64">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 text-gray-500 fill-current"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"
+              />
+            </svg>
+          </span>
+          <input
+            class="block w-full py-2 pr-4 text-sm leading-tight placeholder-gray-400 bg-gray-900 rounded-lg pl-9 focus:bg-white focus:text-gray-900 focus:placeholder-gray-600 focus:outline-none"
+            placeholder="Search"
+          />
+        </div>
+
+        <button class="ml-4 text-gray-400 hover:text-gray-200">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 fill-current"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10.771 22c-.646.646-1.535 1-2.422 1-.874 0-1.746-.346-2.376-.976-1.27-1.27-1.308-3.563-.024-4.846l4.822 4.822zm10.859-22c-.618 0-1.238.237-1.713.711l-.002.003c-.604.605-1.48.845-2.3.627-5.929-1.574-11.011 7.82-16.21 5.179l-1.405 1.406 16.075 16.074 1.404-1.406c-2.641-5.197 6.756-10.28 5.179-16.21-.217-.817.023-1.696.627-2.298l.002-.003c.475-.476.713-1.096.713-1.714 0-1.31-1.055-2.369-2.37-2.369zm-3.479 13.443c-2.026 2.957-2.729 4.233-3.14 6.668l-11.123-11.125.527-.088c2.237-.374 4.312-1.795 6.144-3.049 2.212-1.516 4.503-3.122 6.544-2.575 1.793.475 3.147 1.829 3.624 3.624.535 2.01-.976 4.213-2.576 6.545zm4.353-10.339c-.444.443-1.163.442-1.607-.001-.443-.443-.444-1.163 0-1.606.444-.444 1.164-.444 1.607-.001.443.443.443 1.165 0 1.608z"
+            />
+          </svg>
+        </button>
+        <button class="ml-4 text-gray-400 hover:text-gray-200">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 fill-current"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25-1.249-.56-1.249-1.25.559-1.25 1.249-1.25zm2.001 12.25h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735v.999z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
   <div></div>
